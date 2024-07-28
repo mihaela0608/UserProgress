@@ -1,6 +1,5 @@
 package com.example.userprogress;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,8 +8,11 @@ import java.util.Optional;
 @Service
 public class UserDataService {
 
-    @Autowired
-    private UserDataRepository userDataRepository;
+    private final UserDataRepository userDataRepository;
+
+    public UserDataService(UserDataRepository userDataRepository) {
+        this.userDataRepository = userDataRepository;
+    }
 
     public List<UserData> getAllUserData() {
         return userDataRepository.findAll();
