@@ -5,6 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 
 
 @Entity
@@ -38,5 +39,18 @@ public class UserData {
 
     public void setLastMonthSavings(BigDecimal lastMonthSavings) {
         this.lastMonthSavings = lastMonthSavings;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserData userData = (UserData) o;
+        return id == userData.id && Objects.equals(lastMonthExpenses, userData.lastMonthExpenses) && Objects.equals(lastMonthSavings, userData.lastMonthSavings);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, lastMonthExpenses, lastMonthSavings);
     }
 }
