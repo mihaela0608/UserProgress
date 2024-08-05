@@ -36,7 +36,7 @@ public class UserDataController {
         userDataService.createUserData(userData);
     }
 
-    @PutMapping("/update")
+    @PostMapping("/update")
     @ResponseStatus(HttpStatus.OK)
     public void updateUserData(@RequestBody UserData userDataDetails) {
         userDataService.updateUserData(userDataDetails);
