@@ -1,5 +1,7 @@
-package com.example.userprogress;
+package com.example.userprogress.service;
 
+import com.example.userprogress.model.UserData;
+import com.example.userprogress.repository.UserDataRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

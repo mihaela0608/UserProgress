@@ -1,4 +1,4 @@
-package com.example.userprogress;
+package com.example.userprogress.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

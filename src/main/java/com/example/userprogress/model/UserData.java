@@ -1,4 +1,4 @@
-package com.example.userprogress;
+package com.example.userprogress.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

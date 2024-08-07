@@ -1,5 +1,8 @@
 package com.example.userprogress;
 
+import com.example.userprogress.model.UserData;
+import com.example.userprogress.repository.UserDataRepository;
+import com.example.userprogress.service.UserDataService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

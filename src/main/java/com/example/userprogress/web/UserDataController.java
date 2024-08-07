@@ -1,5 +1,7 @@
-package com.example.userprogress;
+package com.example.userprogress.web;
 
+import com.example.userprogress.service.UserDataService;
+import com.example.userprogress.model.UserData;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
